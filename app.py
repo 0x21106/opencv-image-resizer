@@ -9,11 +9,3 @@ for image in os.listdir():
         img = cv2.imread(f'{os.getcwd()}\{image}', 1)
         resized = cv2.resize(img, (100, 100))
         cv2.imwrite(f"{image_type[0]}_resized{image_type[1]}", resized)
-
-# resized_image = cv2.resize(img, (500, 500))
-
-
-
-# cv2.imshow("Galaxy", resized_image)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
